@@ -1,11 +1,11 @@
-package com.example.studentClient
+package com.example.feignclient
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class StudentClientApplication
+class FeignclientApplication
 
 fun main(args: Array<String>) {
-	runApplication<StudentClientApplication>(*args)
+	runApplication<FeignclientApplication>(*args)
 }
