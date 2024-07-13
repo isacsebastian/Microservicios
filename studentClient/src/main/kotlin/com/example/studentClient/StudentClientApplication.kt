@@ -1,11 +1,9 @@
-package com.example.student_client
+package com.example.studentClient
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-@EnableFeignClients
-@EnableEurekaClient
 class StudentClientApplication
 
 fun main(args: Array<String>) {

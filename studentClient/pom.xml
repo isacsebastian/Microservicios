@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>student-client</artifactId>
+	<artifactId>studentClient</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>student-client</name>
+	<name>studentClient</name>
 	<description>Feign Client</description>
 	<url/>
 	<licenses>
@@ -51,10 +51,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
