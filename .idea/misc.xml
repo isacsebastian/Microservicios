@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/grades/pom.xml" />
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/students/pom.xml" />
+        <option value="$PROJECT_DIR$/feignclient/pom.xml" />
       </list>
     </option>
   </component>

@@ -10,12 +10,18 @@
         <module name="grades" />
         <module name="eureka" />
         <module name="gateway" />
+        <module name="FeignClient" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="feignclient" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="FeignClient" options="-parameters" />
       <module name="eureka" options="-parameters" />
+      <module name="feignclient" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="grades" options="-parameters" />
       <module name="students" options="-parameters" />
