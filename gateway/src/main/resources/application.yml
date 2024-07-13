@@ -1,26 +1,32 @@
 server:
   port: 8080
+
 spring:
+  main:
+    web-application-type: reactive
+
   application:
     name: gateway-ms
+
   cloud:
     gateway:
       discovery:
         locator:
-          enabled: 'true'
+          enabled: true
       routes:
         - id: students-ms
-            uri: lb://STUDENTS-MS
-            predicates:
-              - Path=/students/**
-
+          uri: lb://STUDENTS-MS
+          predicates:
+            - Path=/students/**
         - id: grades-ms
           uri: lb://GRADES-MS
           predicates:
             - Path=/grades/**
+
     loadbalancer:
       ribbon:
-        enabled: 'false'
+        enabled: false
+
 eureka:
   instance:
-    instance-id=${spring.application.name}:${server.port}
+    instance-id: ${spring.application.name}:${server.port}

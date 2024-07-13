@@ -23,9 +23,6 @@ spring:
     username: dckpcdwo
     password: st6ubSdmP_F7WhqhsImhVPsFnKWw9K26
     driverClassName: org.postgresql.Driver
-    hikari:
-      maximum-pool-size: 10
-
 #Conexion para registro de esta API en eureka
 eureka:
   instance:
@@ -34,6 +31,6 @@ eureka:
   # Las siguientes 3 lineas opcional cuando se deba especificar la ruta de Eureka
   # En caso de que todos los microservicios corra en localhost no es necesario
 
-  # client:
-  #   serviceUrl:
-  #     defaultZone: http://localhost:8761/eureka/
+  #client:
+  #serviceUrl:
+   #   defaultZone: http://localhost:8761/eureka/

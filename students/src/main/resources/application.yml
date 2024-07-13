@@ -32,6 +32,6 @@ eureka:
   # Las siguientes 3 lineas opcional cuando se deba especificar la ruta de Eureka
   # En caso de que todos los microservicios corra en localhost no es necesario
 
-  # client:
-  #   serviceUrl:
-  #     defaultZone: http://localhost:8761/eureka/
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

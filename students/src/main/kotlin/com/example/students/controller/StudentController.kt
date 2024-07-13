@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/student")
+@RequestMapping("/students")
 class StudentController {
     @Autowired
     lateinit var studentService: StudentService
@@ -29,7 +29,7 @@ class StudentController {
     fun save(@RequestBody student: Student) : ResponseEntity<Student> {
         return ResponseEntity(studentService.save(student), HttpStatus.OK)
     }
-
+/*
     @PutMapping
     fun update(@RequestBody student: Student): ResponseEntity<Student> {
         return ResponseEntity(studentService.update(student), HttpStatus.OK)
@@ -38,5 +38,5 @@ class StudentController {
     @DeleteMapping("/{id}")
     fun delete(@PathVariable("id") id: Long): Boolean? {
         return studentService.delete(id)
-    }
+    }*/
 }

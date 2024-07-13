@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
 @RestController
-@RequestMapping("/grade")
+@RequestMapping("/grades")
 class GradeController {
     @Autowired
     lateinit var gradeService: GradeService
@@ -22,14 +22,15 @@ class GradeController {
     fun save (@RequestBody grade: Grade): ResponseEntity<Grade> {
         return ResponseEntity(gradeService.save(grade), HttpStatus.OK)
     }
-
+/*
     @PutMapping
     fun update (@RequestBody grade: Grade): ResponseEntity<Grade> {
         return ResponseEntity(gradeService.update(grade), HttpStatus.OK)
     }
 
     @DeleteMapping("/{id}")
+
     fun delete(@PathVariable("id") id : Long ): Boolean? {
         return gradeService.delete(id)
-    }
+    }*/
 }
